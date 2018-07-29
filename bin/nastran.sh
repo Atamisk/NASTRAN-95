@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nasthome=$(dirname $(dirname $(readlink -f $0)))
+nasthome=/usr/share/nastran
 
 # TEST ARGUMENT
 
@@ -55,7 +55,7 @@ export OCMEM="14000000"
 export PROJ="."
 # RUN NASTRAN
 
-$nasthome/mds/nastran
+/usr/lib/nastran/nast-run
 #gdb $nasthome/mds/nastran
 
 
